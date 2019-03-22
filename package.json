@@ -1,0 +1,85 @@
+{
+	"name": "vs-slug",
+	"displayName": "VS Slug",
+	"description": "Slugify a selection or several selections",
+	"version": "0.0.1",
+	"publisher": "neptunedesign",
+	"author": {
+		"name": "Fortez Fabrice",
+        "email": "contact@neptune-design.fr",
+        "url": "https://neptune-design.fr"
+	},
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/neptunedesign/vs-slug"
+    },
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"keywords": [
+		"slug", "slugify", "url"
+	],
+	"categories": [
+		"Formatters", "Other"
+	],
+	"icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#423B55",
+        "theme": "dark"
+    },
+	"activationEvents": [
+		"onCommand:vs-slug.slugify"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "vs-slug.slugify",
+				"title": "Slugify selection"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "VS Slug",
+			"properties": {
+				"vs-slug.customReplacements": {
+					"type": "array",
+					"default": [
+						["&"," and "]
+					],
+					"description": "Slug custom replacements"
+				},
+				"vs-slug.decamelize": {
+					"type": "boolean",
+					"default": true,
+					"description": "Slug decamelize"
+				},
+				"vs-slug.lowercase": {
+					"type": "boolean",
+					"default": true,
+					"description": "Slug lowercase"
+				},
+				"vs-slug.separator": {
+					"type": "string",
+					"default": "-",
+					"description": "Slug separator"
+				}
+
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"@sindresorhus/slugify": "^0.9.0"
+	}
+}
