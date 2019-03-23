@@ -1,6 +1,10 @@
-# VS Slug
+# [VS Slug](https://marketplace.visualstudio.com/items?itemName=neptunedesign.vs-slug)
 
 Use the [slugify](https://github.com/sindresorhus/slugify) package.
+
+## Screenshot
+
+![Demo](https://raw.githubusercontent.com/NeptuneDesign/vs-slug/master/images/screenshot.gif)
 
 ## Features
 
@@ -18,6 +22,10 @@ Open `Preferences` -> `Settings`
 ```
 
 ## Release Notes
+
+### 0.0.2
+
+- Update of the README.md file
 
 ### 0.0.1
 

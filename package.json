@@ -2,7 +2,7 @@
 	"name": "vs-slug",
 	"displayName": "VS Slug",
 	"description": "Slugify a selection or several selections",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "neptunedesign",
 	"author": {
 		"name": "Fortez Fabrice",

@@ -24,7 +24,6 @@ function slugifySelection() {
 			});
 		});
 	}
-
 }
 
 function deactivate() {}
