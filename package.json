@@ -2,31 +2,34 @@
 	"name": "vs-slug",
 	"displayName": "VS Slug",
 	"description": "Slugify a selection or several selections",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"publisher": "neptunedesign",
 	"author": {
 		"name": "Fortez Fabrice",
-        "email": "contact@neptune-design.fr",
-        "url": "https://neptune-design.fr"
+		"email": "contact@neptune-design.fr",
+		"url": "https://neptune-design.fr"
 	},
 	"repository": {
-        "type": "git",
-        "url": "https://github.com/neptunedesign/vs-slug"
-    },
+		"type": "git",
+		"url": "https://github.com/neptunedesign/vs-slug"
+	},
 	"engines": {
 		"vscode": "^1.32.0"
 	},
 	"keywords": [
-		"slug", "slugify", "url"
+		"slug",
+		"slugify",
+		"url"
 	],
 	"categories": [
-		"Formatters", "Other"
+		"Formatters",
+		"Other"
 	],
 	"icon": "images/icon.png",
-    "galleryBanner": {
-        "color": "#423B55",
-        "theme": "dark"
-    },
+	"galleryBanner": {
+		"color": "#423B55",
+		"theme": "dark"
+	},
 	"activationEvents": [
 		"onCommand:vs-slug.slugify"
 	],
@@ -45,7 +48,10 @@
 				"vs-slug.customReplacements": {
 					"type": "array",
 					"default": [
-						["&"," and "]
+						[
+							"&",
+							" and "
+						]
 					],
 					"description": "Slug custom replacements"
 				},
@@ -64,7 +70,6 @@
 					"default": "-",
 					"description": "Slug separator"
 				}
-
 			}
 		}
 	},
@@ -73,13 +78,13 @@
 		"test": "node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"eslint": "^5.13.0",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.14.8",
+		"eslint": "^5.16.0",
+		"typescript": "^3.5.1",
+		"vscode": "^1.1.34"
 	},
 	"dependencies": {
-		"@sindresorhus/slugify": "^0.9.0"
+		"@sindresorhus/slugify": "^0.9.1"
 	}
 }
