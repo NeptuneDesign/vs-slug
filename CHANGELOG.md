@@ -1,3 +1,7 @@
+## 1.0.1
+
+- Update of security dependencies
+
 ## 1.0.0
 
 - Update of security dependencies
